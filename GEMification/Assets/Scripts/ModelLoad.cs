@@ -12,13 +12,13 @@ public class ModelLoade : MonoBehaviour
     public void ChooseModel()
     {
         if (myDrop.value == 1) {
-            SceneManager.LoadScene(6);
-        }
-        else if (myDrop.value == 2) {
             SceneManager.LoadScene(7);
         }
+        else if (myDrop.value == 2) {
+            SceneManager.LoadScene(6);
+        }
         else if (myDrop.value == 3) {
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(7);
         }
     }
 

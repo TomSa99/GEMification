@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
+
+    public void ImmQuestion ()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void UnderConstruction ()
+    {
+        SceneManager.LoadScene(7);
+    }
+
     public void PlayGame ()
         //usado para poder avançar para uma cena seguinte
     {
@@ -14,16 +25,16 @@ public class PlayQuit : MonoBehaviour
     
     public void BackGame ()
     {
-    	if (SceneManager.GetActiveScene().buildIndex == 4)
-    	{
-    		SceneManager.LoadScene(2);
-    	}
-    	else if (SceneManager.GetActiveScene().buildIndex == 7)
+    	if (SceneManager.GetActiveScene().buildIndex == 6)
     	{
     		SceneManager.LoadScene(4);
     	}
-    	else
-    	{
+        else if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
     		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     	}
     }
@@ -38,4 +49,6 @@ public class PlayQuit : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+
 }

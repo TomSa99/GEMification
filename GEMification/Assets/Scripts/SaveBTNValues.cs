@@ -1,4 +1,4 @@
-// To use this example, attach this script to an empty GameObject.
+// Attach this script to an empty GameObject.
 // Create three buttons (Create>UI>Button). Next, select your
 // empty GameObject in the Hierarchy and click and drag each of your
 // Buttons from the Hierarchy to the Your First Button, Your Second Button
@@ -12,16 +12,16 @@ using UnityEngine.UI;
 public class SaveBTNValues : MonoBehaviour
 {
     //Make sure to attach these Buttons in the Inspector
-    public Button m_YourFirstButton, m_YourSecondButton, m_YourThirdButton;
+    public Button m_FirstButton, m_SecondButton, m_ThirdButton;
 
     public double value;
 
     void Start()
     {
         //Calls the TaskOnClick/TaskWithParameters/ButtonClicked method when you click the Button
-        m_YourFirstButton.onClick.AddListener(SaveValue1);
-        m_YourSecondButton.onClick.AddListener(SaveValue2);
-        m_YourThirdButton.onClick.AddListener(SaveValue3);
+        m_FirstButton.onClick.AddListener(SaveValue1);
+        m_SecondButton.onClick.AddListener(SaveValue2);
+        m_ThirdButton.onClick.AddListener(SaveValue3);
     }
 
     void SaveValue1()
