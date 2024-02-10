@@ -20,12 +20,12 @@ public class modMapimm : MonoBehaviour
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
         // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
-        psi.FileName = @"GEMification/python_files/python.exe";
+        psi.FileName = @"python_files/python.exe";
 
         // 2) Provide script and arguments
 
         // var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\map_imm_simulations.py";
-        var script = @"GEMification/python_files/map_imm_simulations.py";
+        var script = @"python_files/map_imm_simulations.py";
         var ID = id.input;
         var UpTake = uptake.num1;
         var DownTake = downtake.num2;

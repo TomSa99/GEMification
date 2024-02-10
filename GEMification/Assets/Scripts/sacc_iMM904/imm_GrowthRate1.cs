@@ -25,21 +25,21 @@ public class imm_GrowthRate1 : MonoBehaviour
 
         var psi = new ProcessStartInfo();
         // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
-        psi.FileName = @"GEMification/python_files/python.exe";
+        psi.FileName = @"python_files/python.exe";
 
 	    if (string.IsNullOrEmpty(id.input)) // tenho de mudar isto porque agora a string n�o fica nula, fica [,]
 	    {
            // 2) Provide script and arguments
         
            //var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\imm_growthrate.py";
-           var script = @"GEMification/python_files/imm_growthrate.py";
+           var script = @"python_files/imm_growthrate.py";
 
            psi.Arguments = $"\"{script}\"";
         }
         else
         {
            // var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\imm_simulations.py";
-           var script = @"GEMification/python_files/imm_simulations.py";
+           var script = @"python_files/imm_simulations.py";
            var ID = id.input;
            var UpTake = uptake.num1;
            var DownTake = downtake.num2;

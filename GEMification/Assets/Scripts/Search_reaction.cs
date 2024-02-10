@@ -22,10 +22,10 @@ public class Search_reaction : MonoBehaviour
         var psi = new ProcessStartInfo();
 
         // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
-        psi.FileName = @"GEMification/python_files/python.exe";
+        psi.FileName = @"python_files/python.exe";
 
         // var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\find_metabolites.py";
-        var script = @"GEMification/python_files/find_metabolites.py";
+        var script = @"python_files/find_metabolites.py";
         psi.Arguments = $"\"{script}\" \"{reaction}\"";
 
         //3) Process configurationc
