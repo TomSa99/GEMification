@@ -13,3 +13,6 @@ Built with simplicity in mind, GEMification is a point-and-click game that focus
 The game aims to clarify genome-scale metabolic models, providing a platform for bioinformatics beginners to understand the tools used in phenotype simulations. From gene and reaction research to calculating expression rates, the game simplifies these processes with a carefully explained UI system.
 
 In order to play simply download the GEMification execution file and run it!
+
+# DISCLAIMER
+Currently there is a problem when performing certain tasks in the game that requires to run python files, for example, when clicking in the "Escher Map" button to display a pathway map. This process contains a C# script that runs a Python script, there is a problem with the location with this Python files as well as the location of the Python executer.
