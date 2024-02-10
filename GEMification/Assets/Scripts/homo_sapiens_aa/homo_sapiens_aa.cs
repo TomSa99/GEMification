@@ -21,7 +21,7 @@ public class homo_sapiens_aa : MonoBehaviour
 
         //var script = @"/home/toms/escher_python/homo_sapiens_aa.py";
         //var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\homo_sapiens_aa.py";
-        var script = @"GEMification/python_files/homo_sapiens_aa.py"
+        var script = @"GEMification/python_files/homo_sapiens_aa.py";
 
         psi.Arguments = $"\"{script}\"";
 

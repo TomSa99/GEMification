@@ -10,17 +10,19 @@ public class sacc_iMM904 : MonoBehaviour
     public void loadEscherMap ()
  
     {
+        //System.IO.Directory.SetCurrentDirectory("GEMification");
+
         // 1) Create Process Info
 
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
         // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
-        psi.FileName = @"GEMification/python_files/python.exe";
+        psi.FileName = @"python_files/python.exe";
 
         // 2) Provide script and arguments
 
         // var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\sacc_iMM904.py";
-        var script = @"GEMification/python_files/sacc_iMM904.py";
+        var script = @"python_files/sacc_iMM904.py";
 
         psi.Arguments = $"\"{script}\"";
 
