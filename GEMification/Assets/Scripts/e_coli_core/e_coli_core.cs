@@ -14,12 +14,14 @@ public class e_coli_core : MonoBehaviour
 
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
         // 2) Provide script and arguments
 
         //var script = @"/home/toms/escher_python/e_coli_core.py";
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\e_coli_core.py";
+        // var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\e_coli_core.py";
+        var script = @"GEMification/python_files/e_coli_core.py";
 
         psi.Arguments = $"\"{script}\"";
 

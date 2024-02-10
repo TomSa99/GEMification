@@ -22,21 +22,24 @@ public class hsaa_GrowthRate : MonoBehaviour
 
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
 	if (string.IsNullOrEmpty(id.input))
 	{
             // 2) Provide script and arguments
 
             //var script = @"/home/toms/escher_python/hsaa_growthrate.py";
-            var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\hsaa_growthrate.py";
+            //var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\hsaa_growthrate.py";
+            var script = @"GEMification/python_files/hsaa_growthrate.py";
 
             psi.Arguments = $"\"{script}\"";
         }
         else
         {
             //var script = @"/home/toms/escher_python/hsaa_simulations.py";
-            var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\hsaa_simulations.py";
+            //var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\hsaa_simulations.py";
+            var script = @"GEMification/python_files/hsaa_simulations.py";
             var ID = id.input;
             var UpTake = uptake.num1;
             var DownTake = downtake.num2;

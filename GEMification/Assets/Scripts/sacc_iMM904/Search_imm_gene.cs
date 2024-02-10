@@ -31,9 +31,10 @@ public class Search_gene : MonoBehaviour
         var psi = new ProcessStartInfo();
 
 
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\find_reactions.py";
+        var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\find_reactions.py";
         psi.Arguments = $"\"{script}\" \"{gene}\"";
 
 

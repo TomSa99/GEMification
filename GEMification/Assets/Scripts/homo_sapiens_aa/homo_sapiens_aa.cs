@@ -14,12 +14,14 @@ public class homo_sapiens_aa : MonoBehaviour
 
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
         // 2) Provide script and arguments
 
         //var script = @"/home/toms/escher_python/homo_sapiens_aa.py";
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\homo_sapiens_aa.py";
+        //var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\homo_sapiens_aa.py";
+        var script = @"GEMification/python_files/homo_sapiens_aa.py"
 
         psi.Arguments = $"\"{script}\"";
 

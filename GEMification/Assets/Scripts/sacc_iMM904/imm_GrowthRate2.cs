@@ -18,11 +18,13 @@ public class imm_GrowthRate2 : MonoBehaviour
         // 1) Create Process Info
 
         var psi = new ProcessStartInfo();
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
         // 2) Provide script and arguments
         
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\imm_growthrate.py";
+        // var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\imm_growthrate.py";
+        var script = @"GEMification/python_files/imm_growthrate.py";
 
         psi.Arguments = $"\"{script}\"";
 

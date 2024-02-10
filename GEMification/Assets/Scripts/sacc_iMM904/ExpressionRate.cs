@@ -16,9 +16,11 @@ public class ExpressionRate : MonoBehaviour
     {
 
         var psi = new ProcessStartInfo();
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\ExpressionRate.py";
+        // var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\ExpressionRate.py";
+        var script = @"GEMification/python_files/ExpressionRate.py";
         var reaction = gene.input;
         var Value = value.num1;
 

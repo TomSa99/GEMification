@@ -17,11 +17,13 @@ public class GRModed : MonoBehaviour
         // 1) Create Process Info
 
         var psi = new ProcessStartInfo();
-        psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
+        psi.FileName = @"GEMification/python_files/python.exe";
 
         // 2) Provide script and arguments
 
-        var script = @"C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\CompleteER.py";
+        // var script = @"C:\Users\toma_\OneDrive\ï¿½rea de Trabalho\escher_python\CompleteER.py";
+        var script = @"GEMification/python_files/CompleteER.py";
 
         psi.Arguments = $"\"{script}\"";
 
