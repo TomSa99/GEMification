@@ -1,7 +1,7 @@
 from mewpy.simulation import get_simulator
 import cobra
 
-model = cobra.io.load_json_model(r'C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\iMM904.json')
+model = cobra.io.load_json_model(r'python_files\iMM904.json')
 
 simul = get_simulator(model)
 

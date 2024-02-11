@@ -5,7 +5,7 @@ import sys
 import webbrowser
 
 
-model = cobra.io.load_json_model(r'C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\iMM904.json')
+model = cobra.io.load_json_model(r'python_files\iMM904.json')
 
 nome = sys.argv[1]
 # gene = 'b2296'

@@ -12,7 +12,7 @@ builder = Builder(
     model_name='e_coli_core',
 )
 
-model = cobra.io.load_json_model(r'C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\e_coli_core.json')
+model = cobra.io.load_json_model(r'python_files\e_coli_core.json')
 
 simul = get_simulator(model)
 

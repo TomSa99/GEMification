@@ -1,7 +1,7 @@
 from simulations import simul
 import sys
 
-json_model_path = r'C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\iMM904.json'
+json_model_path = r'python_files\iMM904.json'
 
 reactions = sys.argv[1] # using the second argument [1] from psi.Arguments
 reactions = reactions.split(', ')

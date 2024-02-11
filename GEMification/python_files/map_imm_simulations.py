@@ -9,7 +9,7 @@ from simulations import simul
 
 map_name = 'iMM904.Central carbon metabolism'
 model_name = 'iMM904'
-json_model_path = r'C:\Users\toma_\OneDrive\Área de Trabalho\escher_python\iMM904.json'
+json_model_path = r'python_files\iMM904.json'
 map_html = 'iMM904_moded.html'
 
 reactions = sys.argv[1] # using the second argument [1] from psi.Arguments
