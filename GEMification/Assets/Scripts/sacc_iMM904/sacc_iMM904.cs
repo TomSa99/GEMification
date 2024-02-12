@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Text;
-
+using UnityEditor;
 using UnityEngine;
 
 public class sacc_iMM904 : MonoBehaviour
@@ -10,19 +10,22 @@ public class sacc_iMM904 : MonoBehaviour
     public void loadEscherMap ()
  
     {
-        //System.IO.Directory.SetCurrentDirectory("GEMification");
+        //System.IO.Directory.SetCurrentDirectory("GEMification/GEMification");
 
         // 1) Create Process Info
 
         var psi = new ProcessStartInfo();
         //psi.FileName = @"/bin/python3";
-        // psi.FileName = @"C:\Users\toma_\AppData\Local\Programs\Python\Python39\python.exe";
-        psi.FileName = @"python_files/python.exe";
+        // psi.FileName = @"Assets/Resources/python_files/python.exe";
+        psi.FileName = Application.dataPath + "/Resources/python_files/python.exe";
+        // psi.FileName = @"C:/Users/toma_/OneDrive/Área de Trabalho/GEMification/GEMification/Assets/Resources/python_files/python.exe";
+
 
         // 2) Provide script and arguments
 
-        // var script = @"C:\Users\toma_\OneDrive\�rea de Trabalho\escher_python\sacc_iMM904.py";
-        var script = @"python_files/sacc_iMM904.py";
+        // var script = @"Assets/Resources/python_files/sacc_iMM904.py";
+        var script = Application.dataPath + "/Resources/python_files/sacc_iMM904.py";
+        // var script = @"C:/Users/toma_/OneDrive/Área de Trabalho/GEMification/GEMification/Assets/Resources/python_files/sacc_iMM904.py";
 
         psi.Arguments = $"\"{script}\"";
 
@@ -52,7 +55,7 @@ public class sacc_iMM904 : MonoBehaviour
         Console.WriteLine("Results:");
         Console.WriteLine(results);
 
-
+        UnityEngine.Debug.Log(psi.FileName) ;
 
         Console.ReadLine();
 
